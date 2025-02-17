@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+
+
+}
+.left-section { 
+    width: 30%;
+    height: 100vh;
+    border-right: 1px black solid;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 40px 40px 20px 40px ;
+    row-gap:10px ;
+}
+.text-sub{
+    width: 100%;
+    height: 100px;
+  
+}
+.text-sub h4{
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.text-sub p span{
+    color: rgb(94, 197, 232);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+.auth-sub{
+    height: 200px;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 40px 0;
+}
+
+.auth-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap:10px ;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 80px;
+    width: 300px;
+    cursor: pointer;
+    transition: box-shadow 0.11s ease-in-out;
+
+}
+
+.auth-link:hover{
+    box-shadow: 2px 0px 2px 0px rgb(198, 195, 195);
+}
+.auth-link img{
+    width: 25px;
+
+}
+
+.input-sub{
+    height: 250px;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+.input-border{
+    font-size: small;
+    color: grey;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.input-border p{
+    width: 60%;
+}
+
+.input-border span{
+    width: 20%;
+    border-top: 1px solid gray;
+
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input .error-message{
+    position: absolute;
+    bottom: -50px;
+    background-color: red;
+    color: white;
+    width: 100%;
+    
+}
+.input input {
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    
+}
+
+.next-button{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.next-button button{
+    background-color: rgb(30, 102, 191);
+    color:white ;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 100px;
+    font-size: large;
+    cursor: pointer;
+    transition: box-shadow 0.11s ease-in-out;
+}
+.next-button button:hover{
+    box-shadow: 2px 0px 2px 0px rgb(198, 195, 195);
+
+}
+
+.next-button Link{
+    text-decoration: none;
+    
+}
