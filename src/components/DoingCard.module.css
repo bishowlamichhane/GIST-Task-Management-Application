@@ -1,0 +1,96 @@
+.container{
+    width: 320px;
+    min-height: 200px;
+    border-radius: 20px;
+    background-color: rgb(16,18,4);
+    color:#9fadbc ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 5px 20px;
+
+}
+
+.header 
+{
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    margin-bottom: 5px;
+    border-bottom: 4px solid rgba(255, 166, 0, 0.873);
+  
+}
+
+.taskLists{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    max-height: 230px;
+    overflow-y:auto ;
+    scrollbar-width: none;
+  flex-grow: 1;
+  padding: 5px 5px 0 5px;
+   
+}
+.checkMark{
+    display: flex;
+    align-items: center;
+}
+
+.taskLists li{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    border-radius:10px;
+    overflow: hidden;
+    gap: 10px;
+    list-style: none;
+    background-color:rgb(34,39,43) ;
+    flex-shrink: 0;
+}
+
+
+.task input{
+   
+    background:none ;
+    border: none;
+    font-size: 16px;
+    color: #9fadbc;
+}
+.task input{
+    outline: none;
+}
+.taskLists li:hover{
+    outline:2px solid white;
+
+
+}
+
+.addTask{
+    width: 100%;
+    height: 50px;
+
+}
+
+.addButton{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.addButton:hover{
+    background-color: #d6e9ff2e;
+    border-radius: 10px;
+}
