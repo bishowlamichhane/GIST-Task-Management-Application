@@ -1,145 +1,131 @@
-.container{
-    width: 350px;
-    min-height: 200px;
-    border-radius: 20px;
+.container {
+    width: 21.875rem; /* 350px */
+    min-height: 12.5rem; /* 200px */
+    border-radius: 1.25rem; /* 20px */
     background-color: rgb(16,18,4);
-    color:#9fadbc ;
+    color: #9fadbc;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px 20px 5px 20px;
-
+    padding: 1.25rem 1.25rem 0.3125rem 1.25rem; /* 20px 20px 5px 20px */
 }
 
-.header 
-{
+.header {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     width: 100%;
-    height: 50px;
+    height: 3.125rem; /* 50px */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10px;
-    margin-bottom: 5px;
-    border-bottom: 4px solid rgba(255, 0, 0, 0.781);
-  
+    padding: 0 0.625rem; /* 10px */
+    margin-bottom: 0.3125rem; /* 5px */
+    border-bottom: 0.25rem solid rgba(255, 0, 0, 0.781); /* 4px */
 }
 
-.taskLists{
+.taskLists {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 15px;
- 
-    max-height: 230px;
-    overflow-y:auto ;
+    gap: 0.9375rem; /* 15px */
+    max-height: 14.375rem; /* 230px */
+    overflow-y: auto;
     scrollbar-width: none;
-  flex-grow: 1;
-  padding: 5px 5px 0 5px;
-   
+    flex-grow: 1;
+    padding: 0.3125rem 0.3125rem 0 0.3125rem; /* 5px 5px 0 5px */
 }
-.checkMark{
+
+.checkMark {
     display: flex;
     align-items: center;
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-1.875rem); /* -30px */
     transition: opacity 0.3s ease, transform 0.3s ease;
     cursor: pointer;
 }
 
-.taskLists li{
+.taskLists li {
     width: 100%;
-    height: 40px;
+    height: 2.5rem; /* 40px */
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 0 15px;
-    border-radius:10px;
+    padding: 0 0.9375rem; /* 15px */
+    border-radius: 0.625rem; /* 10px */
     overflow: hidden;
-    margin-bottom: 5px;
-    gap: 10px;
+    margin-bottom: 0.3125rem; /* 5px */
+    gap: 0.625rem; /* 10px */
     list-style: none;
-    background-color:rgb(34,39,43) ;
+    background-color: rgb(34,39,43);
     flex-shrink: 0;
-    
     position: relative;
 }
 
-
-.task input{
-   
-    background:none ;
+.task input {
+    background: none;
     transition: transform 0.3s ease;
-    transform: translateX(-30px);
+    transform: translateX(-1.875rem); /* -30px */
     border: none;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     color: #9fadbc;
     outline: none;
 }
-.deleteButton{
-    height: 30px;
-    width: 30px;
 
+.deleteButton {
+    height: 1.875rem; /* 30px */
+    width: 1.875rem; /* 30px */
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     border-radius: 50%;
 }
 
-.taskLists li:hover .task input{
-   
+.taskLists li:hover .task input {
     transform: translateX(0);
-
-
 }
-.taskLists li:hover .checkMark{
+
+.taskLists li:hover .checkMark {
     opacity: 1;
     transform: translateX(0);
 }
 
-.taskLists li:hover{
-    outline: 1px solid #9fadbc;
+.taskLists li:hover {
+    outline: 0.0625rem solid #9fadbc; /* 1px */
 }
-.addTask{
-    margin-top: 10px;
+
+.addTask {
+    margin-top: 0.625rem; /* 10px */
     width: 100%;
-    height: 50px;
-
+    height: 3.125rem; /* 50px */
 }
 
-.addButton{
+.addButton {
     display: flex;
     cursor: pointer;
     align-items: center;
-    gap: 10px;
-    padding: 5px;
+    gap: 0.625rem; /* 10px */
+    padding: 0.3125rem; /* 5px */
 }
 
-.addButton:hover{
+.addButton:hover {
     background-color: #d6e9ff2e;
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px */
 }
-.addButton input{
+
+.addButton input {
     background-color: rgb(16,18,4);
     border: none;
-    border-radius: 20px;
-        padding: 0 15px;
-
-    font-size: 16px;
+    border-radius: 1.25rem; /* 20px */
+    padding: 0 0.9375rem; /* 15px */
+    font-size: 1rem; /* 16px */
     font-weight: 500;
     color: #9fadbc;
-    
-
-
-
 }
 
-.addButton input:focus{
-    outline-color: 0.1px solid grey;
+.addButton input:focus {
+    outline-color: 0.0625px solid grey; /* 1px */
 }
 
-.taskDone{
-
-    text-decoration:line-through 2px ;
+.taskDone {
+    text-decoration: line-through 0.125rem; /* 2px */
 }
