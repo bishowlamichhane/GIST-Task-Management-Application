@@ -7,9 +7,10 @@ import { IoMdArrowDropright } from "react-icons/io";
 
 const Home = () => {
   const navigate = useNavigate();
-
   const login = () => navigate("/login");
-  const guest = () => navigate("/");
+  const guest = () => {
+    navigate("/dashboard");
+  };
 
   const showMore = (id) => {
     const featuresId = document.getElementById(id);
@@ -138,7 +139,6 @@ const Home = () => {
               <p>Solutions</p>
             </div>
             <div className={styles.solutionsContent}>
-              <img src="/images/solutions.png" height={"500px"} />
               <div className={styles.solutionsLists}>
                 <li>Why use GIST?</li>
                 <p className={styles.article}>
@@ -160,6 +160,7 @@ const Home = () => {
                   implementing a strategic plan to achieve those goals.{" "}
                 </span>
               </div>
+              <img src="/images/solutions.png" height={"500px"} />
             </div>
           </div>
           <div className={styles.prices} id="prices">

@@ -19,9 +19,17 @@ import { IoFilterOutline } from "react-icons/io5";
 import { FaAnglesUp } from "react-icons/fa6";
 import TodoCard from "./TodoCard";
 import DoingCard from "./DoingCard";
+import ProgressTracker from "./ProgressTracker";
+import useStore from "../store/store";
+import DoneCard from "./DoneCard";
 
 const Dashboard = () => {
   const [name, setName] = useState("Bishow Lamichhane");
+
+  const createNewWorkspace = () => {};
+  const taskArray = useStore((state) => state.taskArray);
+  let totalTasks = taskArray.length;
+  console.log(totalTasks);
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -38,7 +46,7 @@ const Dashboard = () => {
               <p>Recents</p>
               <IoMdArrowDropdown />
             </li>
-            <button>
+            <button onClick={createNewWorkspace}>
               Create New <FaPlusSquare />
             </button>
           </div>
@@ -153,7 +161,11 @@ const Dashboard = () => {
           <div className={styles.main}>
             <TodoCard />
             <DoingCard />
+            <DoneCard />
           </div>
+          {/* <div className={styles.progressTracker}>
+            <ProgressTracker />
+          </div> */}
         </div>
       </div>
     </div>

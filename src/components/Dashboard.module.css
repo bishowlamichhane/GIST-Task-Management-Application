@@ -126,6 +126,7 @@ cursor: pointer;
     width: 100%;
     height: calc(100vh - 60px);
     display: flex;
+    justify-content: start;
 
     
 }
@@ -260,7 +261,9 @@ cursor: pointer;
 .mainContainer{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 300px);
+    position: relative;
+   
    
     height: 100%;
    
@@ -277,6 +280,16 @@ cursor: pointer;
     padding: 0 10px 0 30px;
     
 }
+.main{
+    width: 100%;
+    height: calc(100vh - 64px);
+    background-color: #8f3f88    ;
+    padding: 20px 20px;
+    display: flex;
+    gap: 50px;
+    align-items: start;
+ }
+
 .mainLeftHeader{
     display: flex;
     justify-content: start;
@@ -387,12 +400,14 @@ cursor: pointer;
     bottom: 2px;
 }
 
-.main{
-    width: 100%;
-    height: calc(100vh - 64px);
-    background-color: #8f3f88    ;
-    padding: 20px 20px;
-    display: flex;
-    gap: 50px;
-    align-items: start;
+
+
+.progressTracker{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 1);
+    color: #9fadbc; 
 }

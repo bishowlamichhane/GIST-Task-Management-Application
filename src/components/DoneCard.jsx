@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import styles from "./DoingCard.module.css";
+import styles from "./DoneCard.module.css";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { FaPlus } from "react-icons/fa6";
 import { CiCircleCheck } from "react-icons/ci";
@@ -7,17 +7,18 @@ import { FaCheckCircle } from "react-icons/fa";
 import useStore from "../store/store";
 import { MdOutlineDeleteForever } from "react-icons/md";
 
-const DoingCard = () => {
+const DoneCard = () => {
   const lastTaskRef = useRef(null);
+  const taskArray = useStore((state) => state.taskArray);
+  const setTaskArray = useStore((state) => state.setTaskArray);
+  const doneArray = useStore((state) => state.doneArray);
+  const setDoneArray = useStore((state) => state.setDoneArray);
 
   const [newTask, setNewTask] = useState("");
   const taskRef = useRef(null);
-  const doingArray = useStore((state) => state.doingArray) || [];
-  const setDoingArray = useStore((state) => state.setDoingArray);
-
   const deleteTask = (index) => {
-    const updatedTasks = doingArray.filter((_, i) => i !== index);
-    setDoingArray(updatedTasks);
+    const updatedTasks = doneArray.filter((_, i) => i !== index);
+    setDoneArray(updatedTasks);
   };
 
   useEffect(() => {
@@ -26,11 +27,7 @@ const DoingCard = () => {
     }
   }, [newTask]);
 
-  const markDone = (index) => {
-    const updatedTasks = [...doingArray];
-    updatedTasks[index].isDone = !updatedTasks[index].isDone;
-    setDoingArray(updatedTasks);
-  };
+  const markDone = (index) => {};
 
   const enterButton = (e) => {
     if (e.key === "Enter") addTask();
@@ -38,7 +35,7 @@ const DoingCard = () => {
 
   const addTask = () => {
     if (newTask.trim() !== "") {
-      setDoingArray([...doingArray, { task: newTask, isDone: false }]);
+      setDoneArray([...doneArray, { task: newTask, isDone: true }]);
       setNewTask("");
       taskRef.current.value = "";
     }
@@ -47,17 +44,17 @@ const DoingCard = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <p>Doing</p>
+        <p>Done</p>
         <div>
           <HiOutlineDotsHorizontal size={25} style={{ cursor: "pointer" }} />
         </div>
       </div>
       <div className={styles.taskLists}>
-        {doingArray.length > 0
-          ? doingArray.map((task, index) => (
+        {doneArray.length > 0
+          ? doneArray.map((task, index) => (
               <li
                 key={index}
-                ref={index === doingArray.length - 1 ? lastTaskRef : null}
+                ref={index === taskArray.length - 1 ? lastTaskRef : null}
               >
                 <div
                   className={`${styles.checkMark} ${
@@ -75,10 +72,10 @@ const DoingCard = () => {
                     className={`${task.isDone ? styles.taskDone : ""}`}
                     value={task.task}
                     onChange={(e) => {
-                      const updatedTasks = doingArray.map((t, i) =>
+                      const updatedTasks = doneArray.map((t, i) =>
                         i === index ? { ...t, task: e.target.value } : t
                       );
-                      setDoingArray(updatedTasks);
+                      setDoneArray(updatedTasks);
                     }}
                   />
                 </div>
@@ -105,4 +102,4 @@ const DoingCard = () => {
   );
 };
 
-export default DoingCard;
+export default DoneCard;

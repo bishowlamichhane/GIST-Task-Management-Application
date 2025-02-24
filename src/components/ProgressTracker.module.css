@@ -1,0 +1,37 @@
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-left:1px solid #9fadbc;
+    background-color: #1d2025;
+}
+
+.leftContainer{
+    flex: 1;
+    
+    border-right: 1px solid #9fadbc;
+}
+
+.rightContainer{
+    flex:1;
+    display: flex;
+    padding: 10px 40px;
+    align-items: center;
+    
+}
+
+.progressChart{
+    flex:1 ;
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressReport{
+    flex: 1;
+    height: 100%;
+   
+}
