@@ -1,37 +1,138 @@
-.container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    border-left:1px solid #9fadbc;
-    background-color: #1d2025;
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20PX;
+  align-items: center;
+  color: white;
+  background-color: #1d2025; /* Light background */
+  height: 15rem;
+  border-left: 1px solid #9fadbc;
 }
 
-.leftContainer{
-    flex: 1;
-    
-    border-right: 1px solid #9fadbc;
+.timerContainer {
+  color: white;
+  background-color: #1d2025;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+  width: 50%;
+  height: 13rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  overflow: hidden;
 }
 
-.rightContainer{
-    flex:1;
-    display: flex;
-    padding: 10px 40px;
-    align-items: center;
-    
+.timeSettings {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  
 }
 
-.progressChart{
-    flex:1 ;
-
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.timePlace {
+  font-size: 48px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-.progressReport{
-    flex: 1;
-    height: 100%;
-   
+.timePlace p {
+  margin: 0 5px;
+}
+
+.timePlace span {
+  color: #777; /* Subtle color for the colons */
+}
+
+.timeButtons button {
+  background-color: #007bff; /* Professional blue color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.timeButtons button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.settings {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for settings */
+  margin-bottom: 15px;
+  position: absolute;
+  right: 0px;
+  
+}
+
+.settings p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.settings label {
+  font-size: 16px;
+  color: #555;
+  margin-right: 10px;
+}
+
+.settings input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.settings button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.settings button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.progressContainer{
+  width: 50%;
+  max-height: 100%;
+  border-left:1px solid white ;
+display: flex;
+justify-content: space-between;
+align-items: center;
+overflow: hidden;
+
+}
+
+.progressContainer div{
+height: 100%;
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center; 
+  
+}
+
+.pieChart{
+  width: 6rem;
+  height: 6rem;
+  flex-shrink: 0;
 }

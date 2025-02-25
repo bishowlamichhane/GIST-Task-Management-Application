@@ -6,6 +6,7 @@ import Login from "./authentication/Login.jsx";
 import SignUp from "./authentication/Signup.jsx";
 import Home from "./components/Home.jsx";
 import Dashboard from "./components/Dashboard.jsx";
+import ProgressTracker from "./components/ProgressTracker.jsx";
 
 const router = createBrowserRouter([
   {

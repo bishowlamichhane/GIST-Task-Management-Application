@@ -163,9 +163,9 @@ const Dashboard = () => {
             <DoingCard />
             <DoneCard />
           </div>
-          {/* <div className={styles.progressTracker}>
+          <div className={styles.progressTracker}>
             <ProgressTracker />
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
