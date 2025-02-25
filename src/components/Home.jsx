@@ -7,7 +7,10 @@ import { IoMdArrowDropright } from "react-icons/io";
 
 const Home = () => {
   const navigate = useNavigate();
-  const login = () => navigate("/login");
+
+  const login = () => {
+    navigate("/dashboard");
+  };
   const guest = () => {
     navigate("/dashboard");
   };
