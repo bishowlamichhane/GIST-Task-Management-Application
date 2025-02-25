@@ -27,7 +27,7 @@
 }
 
 .logo {
-  font-size: 3.125rem;
+  font-size: 2.765rem;
   font-weight: 500;
   cursor: pointer;
 }
@@ -57,7 +57,7 @@
   text-align: center;
   align-items: center;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -66,21 +66,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80%;
-  font-size: 1.25rem;
+  height: 70%;
+  font-size: 1.2rem;
   font-weight: 600;
   color: white;
 }
 
 .shortLink {
   width: 100%;
-  height: 2.5rem;
+  height: 2rem;
   background-color: rgb(70, 144, 218);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 0.78rem;
 }
 
 .shortLink p a {
@@ -89,7 +89,7 @@
 
 .hero {
   width: 100%;
-  height: calc(100vh - 7.5rem);
+  height: 100%;
   overflow: auto;
 }
 
@@ -117,7 +117,7 @@
 }
 
 .heroText {
-  font-size: 3.625rem;
+  font-size: 3.2rem;
   width: 90%;
   font-weight: 600;
   display: flex;
@@ -126,7 +126,7 @@
 
 .heroInput input {
   padding: 0.3125rem 2.1875rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border: none;
   border-radius: 0.625rem;
   margin-right: 0.625rem;
@@ -142,7 +142,7 @@
   border: none;
   height: 2.5rem;
   padding: 0.3125rem 1.25rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   cursor: pointer;
 }
 
@@ -178,7 +178,7 @@
 }
 
 .featuresHeader p, .solutionsHeader p, .pricesHeader p {
-  font-size: 1.375rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -199,19 +199,19 @@
 }
 
 .solutionsLists li {
-  font-size: 1.375rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .article {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin: 1.25rem 0 0 3.125rem;
   font-style: italic;
   margin-bottom: 1.875rem;
 }
 
 .solutionsLists span {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .prices {
@@ -224,7 +224,7 @@
 }
 
 .pricesHeader p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #333;
   margin-bottom: 1.25rem;
@@ -246,7 +246,7 @@
 }
 
 .cardHeader p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -272,7 +272,7 @@
 }
 
 .cardContainer ul li {
-  font-size: 1rem;
+  font-size: 0.85rem;
   margin: 0.625rem 0;
   display: flex;
   align-items: center;
@@ -283,7 +283,7 @@
 }
 
 .cardContainer div {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-top: 1.25rem;
 }
@@ -310,7 +310,7 @@
 }
 
 .mainChick p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 a {
