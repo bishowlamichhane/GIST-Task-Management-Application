@@ -49,7 +49,7 @@ const Home = () => {
             Login
           </div>
           <div className={styles.guest} onClick={guest}>
-            Guest
+            View
           </div>
         </div>
       </div>
