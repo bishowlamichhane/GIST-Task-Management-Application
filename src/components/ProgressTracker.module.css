@@ -34,7 +34,7 @@
 }
 
 .timePlace {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -57,7 +57,7 @@
   padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   margin: 5px;
   transition: background-color 0.3s ease;
 }
@@ -135,4 +135,8 @@ align-items: center;
   width: 6rem;
   height: 6rem;
   flex-shrink: 0;
+  
+}
+.progressContainer table{
+  font-size: 14px;
 }

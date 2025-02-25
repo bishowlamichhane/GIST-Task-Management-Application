@@ -50,7 +50,7 @@ export default function PieChartWithCustomizedLabel() {
       sx={{
         [`& .${pieArcLabelClasses.root}`]: {
           fill: "white",
-          fontSize: 14,
+          fontSize: 12,
         },
       }}
       {...sizing}
